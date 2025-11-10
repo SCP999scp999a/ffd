@@ -12,7 +12,7 @@ local function CreateLoadingGUI()
     local success, result = pcall(function()
         local playerGui = player:WaitForChild("PlayerGui")
         
-        local oldGui = playerGui:FindFirstChild("DeltaXLoader")
+        local oldGui = playerGui:FindFirstChild("DeltaX")
         if oldGui then
             oldGui:Destroy()
         end
@@ -257,7 +257,7 @@ local function Main()
         
         if gui then
             if success then
-                gui.StatusText.Text = "🚫 isj+÷>_hdu"
+                gui.StatusText.Text = "🚫 isj+÷>_hduทำงานไม่สำเร็จ"
                 gui.LoadingText.Text = "ระบบทำงานเสร็จสิ้น"
                 gui.StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
             else
